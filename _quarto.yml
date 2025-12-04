@@ -1,0 +1,69 @@
+project:
+  title: "Test book template"
+  type: book
+  # brand: "_extensions/HHSK-wkl/brand_hhsk/brand/_brand.yml"
+  # post-render: 
+  #  - "R/post_render_zwem_icons.R"
+  
+book:
+  title: "Rapportage waterkwaliteit"
+  sidebar:
+    title: "Rapportage waterkwaliteit"
+  navbar: 
+    search: true
+    # background: "#D2EBEE"
+    logo: logo-hhsk-wit
+    pinned: false
+  page-footer: 
+    center: 
+      "![](images/schonevoeten.png){width=50%}"
+  page-navigation: true
+  twitter-card: true
+  open-graph: true
+  favicon: "_extensions/HHSK-wkl/brand_hhsk/brand/favicon.svg"
+  # reader-mode: true
+  # abstract-title: "Introductie"
+  # abstract: ""
+  # search: true
+  date: today
+  chapters:
+    - "index.qmd"
+    # - "2024_01-zichtbare-toestand.qmd"
+    # - "02-krw.qmd"
+    # - "03-zwemwater.qmd"
+    # - "04-nutrienten.qmd"
+    # - "05-bestrijdingsmiddelen.qmd"
+    # - "06-meetnetten.qmd"
+    # - "09-meer_info.qmd"
+    # - "98-colofon.qmd"
+
+format:
+  html:
+    link-external-newwindow: true
+    # theme:
+    #   - cosmo
+      # - "css/styles_wklrap.scss"
+    #   - brand
+    # fig-format: svg
+    # cap-location: margin
+    reference-location: document
+
+lang: nl
+language: 
+  nl:
+    section-title-abstract: ""
+    title-block-published: "Datum"
+    toc-title-document: "In dit hoofdstuk"
+    crossref-fig-title: "Figuur"
+    crossref-tbl-title: "Tabel"
+    crossref-ch-prefix: "hoofdstuk"
+
+knitr:
+  opts_chunk:
+    dev: "ragg_png"    
+
+execute: 
+  # freeze: auto
+  echo: false
+  warning: false
+  message: false
